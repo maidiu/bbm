@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="sidebar">
+            <div>
+                <img src="images/bearwhite.png" class="bearwhite">
+            </div>
+            <div class="buttons">
+                <button id="about-button">about</button>
+                <button id="values-button">values</button>
+                <button id="inquiries-button">inquire</button>
+                <button id="contact-button">contact</button>
+                
+                
+            </div>
+        </div>
+        
+        <div class="main">
+            <img src="images/logo white.png" class="background-logo">
+            <a href="https://www.instagram.com/blackoutbookingmgmt/">
+                <img src="images/ig logo maybe.png" class="iglogo">
+            </a>
+            
+            <div class="main-header">
+                
+            </div>
+            <div class="texts">
+                <div class='hidden' id="about-section">
+                    <h2>Who we are:</h2>
+                    <br>We formed Blackout Booking Management to get you on stage so you can focus on your art.<br><br>  
+                    We are, of course, musicians ourselves, and if you've been in the music scene 
+                    for long in Columbia, SC, you've probably seen us play in one band or another.<br><br> 
+                    I'm Hannah, and I'm currently in three. <br><br>And what we've surely all observed, and if you're
+                    here you yourself probably feel, is that often, being driven to make art and having
+                    an interest in logistics, business, networking, scheduling, negotiating, etc., do
+                    not always naturally complement each other. <br><br>I know plenty of artists myself who are
+                    incredibly talented but not necessarily the greatest at pulling it all together.
+                    <br><br>
+                    And that's what we're here for: to help you pull it all together, so you can stay
+                    focused on the side of this that is most inspiring: being creative, making art, playing music. 
+                    <br><br>Our own reasons for starting Blackout are because, if one must work, it's a lot more
+                    satisfying to do something that's integral to what we love already.<br><br> But on a deeper level,
+                    it's because we want powerful artistic personalities on stages, where they belong, lighting
+                    people up -- the world needs real art, and the music we get to experience should not be limited to that made only by
+                    those with a flair for the managerial.<br><br>  
+                    <br><br>
+                    Blackout exists to bridge that gap. Your job is to bring art into the world. Ours is to make sure
+                    people hear it.
+
+                </div>
+                
+                <div class="hidden" id="values-section">
+                    <div id="values-text">
+                        <h2>Values:</h2><br>
+                        Blackout Booking Management is woman-owned and operated, by members of the LGBT community, 
+                        and as such, we are committed as an organization to fostering an art scene that affirms,
+                        embraces, and promotes the expression of people of all genders, sexualities, races -- our
+                        interest is in working with artists who are grounded in these values.
+                    </div>
+
+                </div>
+                <div class="hidden" id="inquiries-section">
+                    <div><h2>What are we looking to do?</h2><br>
+                        Blackout operates on a percentage basis: we handle the legwork of 
+                        putting together the best possible events to showcase your work, and 
+                        the fullness of the room leaves us all in the same boat.<br><br> If that
+                        sounds good to you, please provide us with a bit of information below, and we will
+                        reach out to you shortly. 
+                        <br><br>
+                        <form id="inquiry-form" style="justify-self: center;" action="https://formspree.io/f/moqgkbnp" method="POST">
+                            <h4>Firstly, your name:</h4>
+                                    <input type="text" id="nameInput" name="textInput" placeholder="Prince Nelson">
+                            <br><br><h4>Email:</h4>
+                                    <input type="text" id="emailInput" name="textInput" placeholder="youremail@here.com">
+                            <br><br><h4>Phone number:</h4>
+                                    <input type="text" id="phoneInput" name="textInput" placeholder="format: (987)654-3210">
+                             <br><br><h4>The name of your band:</h4>
+                                    <input type="text" id="bandNameInput" name="textInput" placeholder="'Daddy's Sock Drawer', 'Vitamin: Be Twelve', etc">
+                                <br><br><h4>A bit about y'all:</h4>
+                                    <input type="text" id="aboutInput" name="textInput" placeholder="Style, ensemble, socials, links to recordings, etc.">
+                            <br><br><h4>What kind of arrangement are you looking for?</h4>
+                                    <input type="text" id="arrangementInput" name="textInput" placeholder="Single show, regular booking in town, tour, etc.">
+                            <br><br><h4>Any questions for us?</h4>
+                                    <input type="text" id="questionsInput" name="textInput" placeholder="?">
+                            <br><br><h4>Anything else to know:</h4>
+                                    <input type="text" id="anythingElseInput" name="textInput" placeholder="...">
+                                    <br><br><br><h4>And that's it:</h4>
+                            
+                                    <input type="submit" value="submit" id="submit">
+
+                        </form>
+                    </div>
+                </div>
+                <div class="hidden" id="contact-section">
+                    <h2>Contact: Hannah Edmonds</h2>
+                        <img src="images/hannahbw.png" style="width: 340px;" id="hannah">
+                        <br><br><a class="contact-links" href="mailto:blackoutbookingmgmt@gmail.com">blackoutbookingmgmt@gmail.com</a>
+                        <br><br><a class="contact-links" href="tel:+8038062203">803-806-2203</a>
+                        <br><br><a class="contact-links" href="https://www.instagram.com/blackoutbookingmgmt/">@blackoutbookingmgmt</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer>
+    <div class="footercontainer">
+        <p class="left"> ©2024 BBM</p>
+        <p class="right"> site:PokeTheBear©2024</p>
+    </div> 
+
+  </footer>
+
+<script src="site.js"></script>
+</body>
+</html>
