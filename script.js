@@ -5,6 +5,7 @@ const logo = document.getElementById('logo');
 
 
 
+
 overlay.classList.add('overlay');
 document.body.appendChild(overlay);
 

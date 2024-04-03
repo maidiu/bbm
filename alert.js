@@ -1,7 +1,9 @@
-window.alert = function(message) {
-    document.getElementById('custom-alert').style.display = 'block';
-    document.getElementById('overlay').style.display = 'block';
-    document.getElementById('custom-alert').innerHTML = '<p>' + message + '</p><button onclick="closeAlert()">Close</button>';
-  };
+function showAlert() {
+    const customAlert = document.getElementById('customAlert');
+    customAlert.style.display = 'block';
+}
 
-  console.log('dingus')
+function hideAlert() {
+    const customAlert = document.getElementById('customAlert');
+    customAlert.style.display = 'none';
+}

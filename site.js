@@ -22,7 +22,8 @@ const arrangementInput = document.getElementById('arrangementInput')
 const questionsInput = document.getElementById('questionsInput')
 const anythingElseInput = document.getElementById('anythingElseInput')
 const inquiryForm = document.getElementById('inquiry-form')
-
+const customAlertText = document.getElementById('custom-alert-box-text')
+const customAlert = document.getElementById('customAlert')
 
 bearWhite.addEventListener('mousedown', function() {
    setTimeout(function() {
@@ -119,14 +120,26 @@ function submitInquiry(event) {
               body: JSON.stringify({ messageBody })
           }).then(function(response) {
               if (response.ok) {
-                  alert("Message sent successfully!");
+                  showAlert();
+                  customAlertText.innerText = "Message sent -- we'll be in touch." //alert("Message sent successfully!");
               } else {
-                  alert("Failed to send message. Please try again later.");
+                  showAlert();
+                  customAlertText.innerText = "Failed to send message. Please try again later.";
               }
           }).catch(function(error) {
-              alert("An error occurred. Please try again later.");
+               showAlert();
+              customAlertText.innerText = "An error occurred. Please try again later.";
               console.error(error);
           });
       };
+
+      function hideAlert() {
+         customAlert.classList.add('hidden');
+       }
       
- 
+      
+      /*const alertMessage = response.ok ? "Message sent successfully!" : "Failed to send message. Please try again later.";
+      const alertElement = document.createElement("div");
+      alertElement.className = "alert";
+      alertElement.textContent = alertMessage;
+      document.body.appendChild(alertElement);*/
